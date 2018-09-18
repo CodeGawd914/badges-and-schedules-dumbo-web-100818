@@ -15,7 +15,6 @@ def assign_rooms(speakers)
   room.push("Hello, #{name}! You\'ll be assigned to room #{i}!") 
   i += 1
   end
-  return room
 end
 
 def printer(names)
