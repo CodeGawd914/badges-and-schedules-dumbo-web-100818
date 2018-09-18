@@ -9,11 +9,13 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(speakers)
+  room = []
   i = 1
-  speakers.collect do |name| 
-  "Hello, #{name}! You\'ll be assigned to room #{i}!" 
+  speakers.each do |name| 
+  room.push("Hello, #{name}! You\'ll be assigned to room #{i}!") 
   i += 1
   end
+  return room
 end
 
 def printer(names)
